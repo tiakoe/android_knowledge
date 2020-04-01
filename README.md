@@ -1,2 +1,7 @@
-# android_knowledge
-android&amp;java笔记
+#### Android的探索之路
+### 该学习笔记将持续更新，敬请期待！
+
+## 路漫漫其修远兮，吾将上下而求索。
+
+# 觉得有帮助的话，请点个Star~  ^_^ 感谢~
+
