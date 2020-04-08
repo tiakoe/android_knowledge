@@ -294,7 +294,13 @@ java.lang.AssertionError: Already disposed: Project (Disposed) ComponentDemo
 
 xml命名：`组件名_文件名_类型`
 
+实践证明以下代码并不起作用
 
+```
+android {
+    resourcePrefix "moduleName_"
+}
+```
 
 
 
