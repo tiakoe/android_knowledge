@@ -16,3 +16,11 @@ GridView.custom(
             )
 ```
 
+
+
+
+
+绘制原理：https://www.bookstack.cn/read/GSYFlutterBook/Flutter-9.md
+
+
+
