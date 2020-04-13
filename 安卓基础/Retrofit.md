@@ -17,7 +17,7 @@
 
 retrofit的精髓就在于内部的动态代理模式。
 
-
+<br/>
 
 ## 使用方法
 
@@ -27,7 +27,7 @@ implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
 manifest：   <uses-permission android:name="android.permission.INTERNET" /> 
 ```
 
-
+<br/>
 
 ### 先定义你的网络接口
 
@@ -38,7 +38,7 @@ public interface GitHubService {
 }
 ```
 
-
+<br/>
 
 ### 创建Retrofit对象
 
@@ -48,7 +48,7 @@ Retrofit retrofit = new Retrofit.Builder()
         .build();
 ```
 
-
+<br/>
 
 ### 获得网络请求API的实例
 
@@ -56,7 +56,7 @@ Retrofit retrofit = new Retrofit.Builder()
 GitHubService service = retrofit.create(GitHubService.class);
 ```
 
-
+<br/>
 
 ### 调用API方法
 
@@ -64,7 +64,7 @@ GitHubService service = retrofit.create(GitHubService.class);
 Call<List<Repo>> call = service.listRepos("octocat");
 ```
 
-
+<br/>
 
 ### 执行网络请求
 
@@ -90,7 +90,7 @@ call.enqueue(new Callback<List<Repo>>() {
 });
 ```
 
-
+<br/>
 
 支持的协议:`GET / POST / PUT / DELETE / HEAD / PATCH`
 
@@ -110,7 +110,7 @@ Call<ResponseBody> example(@Field("name") String name,
 // 需要注意的是 使用Field 的时候，要加 @FormUrlEncoded 用来格式化。
 ```
 
-
+<br/>
 
 ## 上传文件案例
 
@@ -157,13 +157,13 @@ t.printStackTrace();
 
 [参考]: https://juejin.im/post/5e44ea086fb9a07c9e1c19b6
 
-
+<br/>
 
 ## @SerializedName
 
 注解来将对象里的属性跟json里字段对应值匹配起来。
 
-
+<br/>
 
 ## @Expose
 
@@ -196,9 +196,9 @@ Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create()
  2.lastName不会参与序列化
  3.emailAddress 不会参与系列化及反序列化
 
- 
+ <br/>
 
-
+<br/>
 
 ## 相关博客： 
 

@@ -12,7 +12,7 @@
 
 `ViewModelStoreOwner` Fragment|Activity都属于其派生类. 在ViewModelProvider创建时使用.
 
-
+<br/>
 
 ## ViewModel
 
@@ -20,7 +20,7 @@ ViewModel只能在屏幕旋转时保存数据, 而无法在内存回收Activity�
 
 `ViewModel` 用于继承实现自定义的数据实体
 
-
+<br/>
 
 ## ViewModelProvider
 
@@ -33,7 +33,7 @@ new ViewModelProvider.AndroidViewModelFactory(getApplication());
 
 AndroidViewModelFactory继承于NewInstanceFactory
 
-
+<br/>
 
 AndroidViewModelFactory源码：
 
@@ -58,6 +58,8 @@ public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
     return super.create(modelClass);
 }
 ```
+
+<br/>
 
 ### isAssignableFrom
 

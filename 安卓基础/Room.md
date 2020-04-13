@@ -11,11 +11,15 @@
 
 <!-- /TOC -->
 
+
+
+<br/>
+
 ## Room介绍
 
 Room是Google提供的一个ORM库。
 
-
+<br/>
 
 @Entity用来注解实体类，@Database通过`entities`属性引用被`@Entity`注解的类，并利用该类的所有字段作为表的列名来创建表。
 
@@ -23,7 +27,7 @@ Room是Google提供的一个ORM库。
 
 @Database用来注解类，并且注解的类必须是继承自`RoomDatabase`的抽象类。该类主要作用是创建数据库和创建Daos（data access objects，数据访问对象）。`在使用@Database注解的类中必须定一个不带参数的方法，这个方法返回使用@Dao注解的类。`
 
-
+<br/>
 
 简言之：
 
@@ -31,7 +35,7 @@ Room是Google提供的一个ORM库。
 - Dao：Database access object：定义了一些操作数据库的操作，比如说增删改查
 - Database：可以认为是完整的数据库，完整的数据库包括数据库信息和数据库操作，也就是`Entity`和`Dao`
 
-
+<br/>
 
 ## 添加依赖
 
@@ -45,6 +49,8 @@ dependencies {
     
 }
 ```
+
+<br/>
 
 ### 其他依赖
 
@@ -74,9 +80,9 @@ allprojects {
 }
 ```
 
+<br/>
 
-
-
+<br/>
 
 ## fallbackToDestructiveMigration()
 
