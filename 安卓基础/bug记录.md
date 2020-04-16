@@ -310,19 +310,25 @@ android {
 
 
 
+```
+Android 6.0错误
+
+Surface: getSlotFromBufferLocked: unknown buffer: 0x7f93a6f540
+```
+
+
+
+## 启动模式
+
+A未配置singleTop，跳转B，在B中进行onActivityResult》finish后，A重新创建，没有使用原来的那个
 
 
 
 
 
+## 资源引用错误
 
-
-
-
-
-
-
-
+可能出现没有报任何错误，检测代码逻辑
 
 
 
