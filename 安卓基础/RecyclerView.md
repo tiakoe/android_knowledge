@@ -1,7 +1,7 @@
-
 <!-- TOC -->
 
 - [ListAdapter源码例子](#listadapter%e6%ba%90%e7%a0%81%e4%be%8b%e5%ad%90)
+- [分割线](#%e5%88%86%e5%89%b2%e7%ba%bf)
 
 <!-- /TOC -->
 
@@ -142,11 +142,42 @@ class SubRvAdapter extends RecyclerView.Adapter<SubRvAdapter.MyViewHolder> {
 
 
 
+## 分割线
+
+```java
+//添加Android自带的分割线
+recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
+```
 
 
 
+方法二：
 
+自定义形状：
 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:centerColor="#ff00ff00" //绿色
+        android:endColor="#ff0000ff"    //蓝色
+        android:startColor="#ffff0000"  //红色
+        android:type="linear" />
+    <size android:height="3dp" />
+
+</shape>
+```
+
+添加：
+
+```kotlin
+        //添加自定义分割线
+        DividerItemDecoration divider = new DividerItemDecoration(this,DividerItemDecoration.VERTICAL);
+        divider.setDrawable(ContextCompat.getDrawable(this,R.drawable.custom_divider));
+        recyclerView.addItemDecoration(divider);
+```
 
 
 
