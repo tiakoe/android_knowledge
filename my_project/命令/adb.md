@@ -26,7 +26,7 @@
 
 <br/>
 
-# adb命令
+# adb命令（Android debug bridge）
 
 <br/>
 
@@ -267,7 +267,7 @@ adb shell am start -a android.settings.SETTINGS                   # 打开系统
 [参考]: https://juejin.im/post/5b5683bcf265da0f9b4dea96
 
 
- 
+
 
 <br/>
 
