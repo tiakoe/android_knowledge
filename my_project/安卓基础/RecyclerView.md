@@ -24,6 +24,7 @@
      {@literal @}Override
      public void onCreate(Bundle savedState) {
          super.onCreate(savedState);
+         //适配器和viewModel绑定，recycleview再来设置适配器；
          MyViewModel viewModel = ViewModelProviders.of(this).get(MyViewModel.class);
          RecyclerView recyclerView = findViewById(R.id.user_list);
          UserAdapter&lt;User> adapter = new UserAdapter();

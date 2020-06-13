@@ -48,6 +48,8 @@ https://github.com/onestravel/OneBottomNavigationBar 底部导航栏解决方案
 
 https://developer.android.google.cn/jetpack/docs/guide  应用架构
 
+https://github.com/7hens/okbinder 替代AIDL的方案，代码300行；
+
 
 
 服务；下拉列表；瀑布流；自定义图画；广播；contentprovider；
@@ -59,6 +61,24 @@ https://developer.android.google.cn/jetpack/docs/guide  应用架构
 底部button；MVVM使用；
 
 启动模式；
+
+
+
+
+
+aidl问题未实现两个进程通信；
+
+https://www.jianshu.com/p/646e3f2f53d1  线程池使用；
+
+我的优点：
+
+对图片了解详细；
+
+下载器；
+
+计算机网络；
+
+放在应用实践上；
 
 
 
