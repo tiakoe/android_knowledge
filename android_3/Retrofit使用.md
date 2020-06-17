@@ -116,9 +116,21 @@ public interface IPoetryContract {
 
 
 
+Retrofit使用OkHttpClient来实现网络请求
 
 
 
+ConcurrentHashMap
+
+
+
+可以扩展的部分有三个：
+
+OkHttpClient：用于请求网络，其中可以添加拦截器、设置超时时间、log日志、
+
+转化工厂（addConverterFactory）：常用于把Http访问得到的json字符串转换为Java数据对象
+
+回调适配工厂（addCallAdapterFactory）：对网络工作对象callWorker的自动转换，把Retrofit中执行网络请求的Call对象，转换为接口中定义的Call对象。
 
 
 
