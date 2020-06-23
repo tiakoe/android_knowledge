@@ -134,15 +134,37 @@ OkHttpClient：用于请求网络，其中可以添加拦截器、设置超时�
 
 
 
+## 动态代理
+
+不需要一开始就创建代理对象，而是在运行时利用反射机制创建代理类，得到代理对象
 
 
 
+```java
+    public void main() {
+        final IStarDao starDao = new SuperStarDao();
+
+        IStarDao proxy = (IStarDao) Proxy.newProxyInstance(
+                starDao.getClass().getClassLoader(),
+                starDao.getClass().getInterfaces(),
+                new InvocationHandler() {
+                    @Override
+                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                        /*--接活--*/
+                        Object returnValue = method.invoke(starDao, args);//明星工作
+                        /*--宣传工作--*/
+                        return returnValue;
+                    }
+                });
+
+        proxy.dowork();
+    }
+
+```
 
 
 
-
-
-
+https://juejin.im/post/5e9fa2906fb9a03c5f7409e2
 
 
 
